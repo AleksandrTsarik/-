@@ -1,0 +1,36 @@
+extends layouts/default
+
+block pageVar
+	-pageTitle = 'Умницы и Умники ';
+
+block content
+	.page-container.page-container--fix-header
+		.content-wrapper.content-wrapper_bg
+			div.pagelist(style="padding:50px")
+				a(href="/html/main.html") main
+				a(href="/html/stories.html") winners stories
+				a(href="/html/stories-open.html") winners stories open
+			
+
+
+	style.
+		.pagelist a{
+			display:block;
+			padding:5px 0;
+			font-size: 18px;
+			line-height: 15px;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+		

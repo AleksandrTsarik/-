@@ -1,0 +1,94 @@
+-
+	var header = [
+		{
+			name: 'Участие в олимпиаде',
+			link: '#',
+			list: [
+				{
+					name: 'Формат участия',
+					link: '#',
+				},
+				{
+					name: 'Расписание сезона',
+					link: '#',
+				},
+				{
+					name: 'Регионы-участники',
+					link: '#',
+				},
+				{
+					name: 'Требования к эссе',
+					link: '#',
+				},
+			]
+		},
+		{
+			name: 'ИНФОРМАЦИЯ о ОЛИМПИАДЕ',
+			link: '#',
+			list: [
+				{
+					name: 'История создания и развития Олимпиады',
+					link: '#',
+				},
+				{
+					name: 'Регламент',
+					link: '#',
+				},
+				{
+					name: 'Руководство и партнеры ',
+					link: '#',
+				},
+				{
+					name: 'Истории успеха',
+					link: '#',
+				},
+			]
+		},
+		{
+			name: 'РЕГИОНАЛЬНОЕ ДВИЖЕНИЕ',
+			link: '#',
+			list: [
+				{
+					name: 'Регионы-участники',
+					link: '#',
+				},
+				{
+					name: 'Расписание региональных этапов',
+					link: '#',
+				},
+			]
+		},
+		{
+			name: 'УЗНАЙ БОЛЬШЕ',
+			link: '#',
+			active: '1',
+			list: [
+				{
+					name: 'Темы игр',
+					link: '#',
+				},
+				{
+					name: 'Библиотека знаний ',
+					link: '#',
+				},
+				{
+					name: 'Онлайн-викторины',
+					link: '#',
+				},
+			]
+		},
+
+	]
+
+nav.header__menu
+	ul.header__list
+		each item in header
+			li.header__list-item.js-active(class="" + (item.active?'_active':''))
+				a(href="" +item.link) !{item.name}
+				ul.header__sublist
+					each i in item.list
+						li
+							a(href="" +i.link) !{i.name}
+
+			
+            

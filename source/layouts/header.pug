@@ -1,0 +1,28 @@
+header.header
+	.content-wrapper
+		.header__inner
+			.header-left
+				.header-left__inner
+					.header__logo
+						a(href="/html/main.html")
+							img(src="../f/img/header/logo.png", alt="logo")
+					.header-left__text
+						| Всероссийская <br /> открытая <br /> телевизионная <br /> гуманитарная <br /> олимпиада <br /> «Умницы <br /> и Умники»
+			.header-right
+				.header-right__inner
+					.header-right__info
+						div
+							a(href="#") media
+						div 
+							a(href="#") FAQ
+						div
+							a(href="#") КОНТАКТЫ
+						div 
+							a(href="#")
+								img(src="../f/img/header/lens.svg", alt="lens")
+
+					include ../_blocks/header-menu
+				.burger.js-active-parent
+					div
+					div
+					div

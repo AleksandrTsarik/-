@@ -1,0 +1,49 @@
+footer.footer
+	.content-wrapper
+		.footer__wrap 
+			.footer__list 
+				.footer__item 
+					nav.footer__menu.footer__menu--top
+						ul.footer__menu-list 
+							each list in ['Политика кониденциальности','Условия использования','Авторское право']
+								li
+									a(href="#")= list
+
+					nav.footer__menu
+						ul.footer__menu-list 
+							each list in ['Карта сайта','Метрики посещяемости','Контакты']
+								li
+									a(href="#")= list
+				.footer__item 
+					.footer__item-title Мы в социальных сетях
+					.footer__item-link
+						each img in ['../f/img/footer/telegram.png','../f/img/footer/vk.png','../f/img/footer/youtube.png']
+							div
+								a(href="#")
+									img(src=""+img, alt="")
+				.footer__item
+					.footer__form.f-form
+						form(action="")
+							.f-form__inner
+								.f-form__title ОБРАТНАЯ СВЯЗЬ
+								.f-form-block
+									.f-form-block__label 
+										.f-form-block__input
+											input(type="text" required placeholder="ФИО") 
+
+								.f-form-block
+									.f-form-block__label 
+										.f-form-block__input
+											input(type="tel" required placeholder="Email") 
+
+								.f-form-block
+									.f-form-block__label 
+										.f-form-block__textarea
+											textarea(required placeholder="Ваше сообщение")
+								.f-form-block
+									button.f-form-block__btn(type="submit") Отправить сообщение			
+			.footer-b__strip
+				.footer-b__left © «Умницы и Умники». 2022
+				.footer-b__right
+					img(src="../f/img/footer/logo.png", alt="")
+					  

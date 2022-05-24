@@ -1,0 +1,312 @@
+.b
+	&__info
+		overflow: hidden
+		@media $tablet
+			display: none
+	&-info
+		overflow: hidden
+		&__list
+			display: flex
+			margin: 0 -50px
+			@media $desktop
+				margin: 0 -20px
+			// @media $phone
+			// 	margin: 0
+		&__item
+			flex: 0 0 25%
+			max-width: 25%
+			text-transform: uppercase
+			color: rgba($black, 0.42)
+			position: relative
+			transition: 0.3s
+			padding: 0 50px
+			overflow: hidden
+			@media $desktop
+				padding: 0 20px
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				height: 20px
+				background: $lightgreen
+				transition: .8s
+				width: 0
+			&:hover, &.active
+				color: $black
+				&:before
+					width: 100%               
+			&:after
+				content: ''
+				position: absolute
+				right: 0
+				top: 50%
+				transform: translateY(-50%)
+				width: 1px
+				height: 70%
+				background: #9A9A9A
+			&:last-child
+				&:after
+					background: 0
+			&-inner
+				padding: 75px 0
+		&__title
+			font-size: 17px
+			line-height: 1.4em
+			font-weight 700
+		&__subttile
+			font-weight 400
+
+	&-offer
+		margin-bottom 80px
+		@media $desktop
+			margin: 0 -30px 40px
+		@media $phoneS
+			margin: 0 -15px 0
+		&__list
+			display: flex
+			flex-wrap: wrap
+		&__bg
+			position: relative
+			padding: 60px 55px
+			color: $white
+			height: 100%
+			img
+				display: flex
+				margin-left auto
+			@media $desktop
+				padding: 35px 30px
+			@media $phoneS
+				padding: 25px 15px
+			@media $tablet 
+				flex: 0 0 100%
+				max-width: 100%
+			&--red
+				background: $red
+			&--blue
+				background: $darkoffer
+			&--green
+				background: $green
+				.b-offer__item-img
+					display: flex
+					margin-left auto
+					margin-right -55px
+					flex: 0 0 60%
+					max-width: 60%
+					@media $desktop
+						margin-right: -30px
+					@media $phoneS
+						margin-right -15px
+					@media $tabletB
+						margin-top 30px
+					@media $beforePhoneS
+						margin-top 40px
+						flex: 0 0 186px
+						max-width: 186px
+						max-height: 150px
+					@media $phoneS
+						flex: 0 0 150px
+						max-width: 150px
+						margin-top 0
+				.b-offer__item-text
+					flex: 0 0 40%
+					max-width: 40%
+					@media $beforePhoneS
+						margin-top 20px
+						flex: 0 0 50%
+						max-width: 50%
+					@media $phoneS
+						flex: 0 0 40%
+						max-width: 40%
+						margin-top 0
+		&__item
+			flex: 0 0 33.333%
+			max-width: 33.333%
+			position: relative
+			@media $tabletB
+				flex: 0 0 100%
+				max-width: 100%
+			@media $phone
+				flex: 0 0 100%
+				max-width: 100%
+			&-foto
+				position: absolute
+				top: 0
+				right: 0
+				z-index 5
+				img
+					display: block
+					max-height: 225px
+					@media $desktop
+						max-height: 185px
+					@media $phoneS
+						max-height: 150px
+			&-title
+				font-weight: 600
+				font-size: 24px
+				line-height: 1.3em
+				padding-right 50%
+				padding-bottom 100px
+				@media $desktop
+					font-size: 20px
+				@media $tabletB
+					padding-bottom 60px
+					font-size: 24px
+					padding-right 80%
+				@media $beforePhoneS
+					font-size: 20px
+			&-middle
+				position: relative
+				display: flex
+				justify-content: space-between
+				padding-bottom 60px
+				@media $tabletB
+					padding-bottom 10px
+			&-text
+				font-weight: 400
+				font-size: 28px
+				line-height: 1.1em
+				flex: 0 0 50%
+				max-width: 50%
+				@media $desktop
+					font-size: 20px
+				@media $tabletB
+					font-size: 28px
+				@media $beforePhoneS
+					font-size: 20px
+
+				position: relative
+				z-index 1
+			&-img
+				flex: 0 0 110px
+				max-width: 110px
+				margin-left auto
+				@media $desktop
+					flex: 0 0 30%
+					max-width: 30%
+			&-link
+				position: absolute
+				bottom: 60px
+				left: 55px
+				display: flex
+				align-items: center
+				@media $desktop
+					left: 30px
+					bottom: 35px
+				@media $phone
+					position: relative
+					bottom: 0
+					left: 0
+				a
+					display: flex
+					align-items: center
+					font-weight: 700
+					font-size: 20px
+					line-height: 1.4em
+					color: $white
+					transition: 0.3s
+					&:hover
+						transform: scale(1.05)
+					img
+						margin-left 10px
+						margin-top 5px
+
+	&-news
+		position: relative
+		@media $phone
+			padding: 40px 0 85px
+		&__top
+			display: flex
+			justify-content: space-between
+			align-items: center
+			width: 100%
+			padding-top 80px
+				@media $phone
+					padding: 0 
+			&-link
+				@media $phone
+					position: absolute
+					left: 0
+					bottom: 30px
+				a
+					display: block
+					color: $linkFont 
+					font-size: 19px
+					line-height: 1.3em
+					font-weight: 600
+					&:hover
+						color: darken($linkFont , 20%)
+						text-decoration: underline
+		&__title
+			font-size: 34px
+			line-height: 0.9em
+			color: $black
+			font-weight 600
+		&__list
+			display: flex
+			margin: 0 -20px
+			padding: 50px 0 90px
+			flex-wrap: wrap
+			@media $desktopB
+				margin: 0 -10px
+			@media $phone
+				padding: 0
+				margin: 0
+		&__item
+			flex: 0 0 25%
+			max-width: 25%
+			color: $black
+			//padding: 0 20px
+			padding: 0 40px 0 10px
+			position: relative
+			border-right: solid 1px #9A9A9A
+			&:last-child
+				border-right: 0
+			@media $desktop
+				flex: 0 0 50%
+				max-width: 50%
+				&:nth-child(3)
+					display: none
+				&:nth-child(4)
+					display: none						
+				&:nth-child(2)
+					border-right: 0
+			@media $phone
+				padding: 20px 0
+				border-right: 0
+				border-bottom: solid 1px #9A9A9A
+			@media $phone
+				flex: 0 0 100%
+				max-width: 100%
+			&-inner
+				padding-right 90px
+				position: relative
+				@media $desktop
+					padding-right 40px
+				@media $phone
+					padding-right 0
+			&-top
+				padding-bottom 56px
+				position: relative
+				@media $phone
+					padding-bottom 25px
+			&-title
+				font-size: 21px
+				font-weight: 600
+				line-height: 1.1em
+				margin-bottom 15px
+			&-text
+				font-size: 15px
+				font-weight: 400
+				line-height: 1.1em
+			&-date
+				font-weight: 600
+				font-size: 16px
+				line-height: 1.2em
+				margin-top auto
+				position: absolute
+				left: 20px
+				bottom: 0
+				@media $phone
+					position: relative
+					left: auto
